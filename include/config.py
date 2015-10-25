@@ -33,9 +33,9 @@ class Config(object):
 		if self.flag_stemming:    self.stemmer   = SnowballStemmer(language)
 
 """ Eliminar y actualizar tokenizer.py """
-language  = "spanish"
+language  = "english"
 flag_stemming   = False
-flag_stopwords = False
+flag_stopwords = True
 STOPWORDS = []
 STEMMER   = None
 if flag_stopwords: STOPWORDS = [x for x in stopwords.words(language)]
